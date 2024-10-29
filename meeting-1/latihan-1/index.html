@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Tempat meta tag, title, extermal css & intial load js -->
+        <meta charset="utf-8" />
+        <meta name="description" content="Deskripsi website" />
+        <meta name="keywords" content="Tokopedia, Mulai aja dulu" />
+        <title>Nama website kita</title>
+        <!-- External CSS -->
+        <link rel="stylesheet" href="style.css" />
+        <style> 
+            /* Tempat internal css */
+        </style>
+    </head>
+    <body>
+        <!-- Headings -->
+        <h1>Nama saya Aditya Tresnobudi</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <!-- Paragraph -->
+        <p>
+            ini paragraf baru
+        </p>
+        <!-- Anchor -->
+        <!-- External Website -->
+        <a href="https://google.com" target="_blank">Google</a>
+        <!-- Internal Website -->
+        <div>
+            <a href="about.html">About <span style="color: pink"></span></a>
+            <b>ini bold</b>
+            <i>ini italic</i>
+            <del>ini striketrhough</del>
+            <strong></strong>
+        </div>
+        <!-- Unordered list {bullet} -->
+        <h1>Daftar Hobby</h1>
+        <ul>
+            <li>Makan</li>
+            <ul>
+                <li>Soto</li>
+                <li>Ikan</li>
+                <ul>
+                    <li>Tongkol</li>
+                    <li>Gurame</li>
+                </ul>
+            </ul>
+        </ul>
+        <!-- Ordered list {number} -->
+        <h1>Daftar Kegiatan</h1>
+        <ol>
+            <li>Bangun</li>
+            <li>Makan</li>
+            <li>Mandi</li>
+            <li>Tidur</li>
+        </ol>
+        <!-- Gambar -->
+        <img src="https://cdn.sstatic.net/Img/home/illo-home-hero.png?v=4718e8f857c5" 
+        width="200" 
+        alt="ini foto dari StackOverflow"/>
+        <!-- Table -->
+        <table border="1">
+            <!-- Header TR = Table Row -->
+            <caption>
+                <b>Daftar Umur Siswa</b>
+            </caption>
+            <thead>
+            <tr>
+                <th rowspan="2">No</th>
+                <th colspan="2">Nama Lengkap</th>
+                <th rowspan="2">Umur</th>
+            </tr>
+            <tr>
+                <!-- TD = Table Data -->
+                <!-- <th>No</th> -->
+                <th>Nama Depan</th>
+                <th>Nama Belakang</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <!-- Isi Tabel -->
+                <td>1</td>
+                <td>Aditya</td>
+                <td>Tresnobudi</td>
+                <td>23</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Jumlah Siswa</td>
+                    <td>1</td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- Form -->
+        <section>
+            <h1>Form Pendaftaran Siswa</h1>
+            <form action="index.html" method="post">
+                <div>
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama" />
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" />
+                </div>
+                <div>
+                    <label for="umur">Umur</label>
+                    <input type="number" id="umur" name="umur" />
+                </div>
+                <div>
+                    <label for="tanggal_lahir">Tanggal Lahir</label>
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir" />
+                </div>
+                <div>
+                    <label for="alamat">Alamat</label>
+                    <textarea type="alamat" id="alamat" name="alamat"></textarea>
+                </div>
+                <div>
+                    <label>Pendidikan Terakhir</label>
+                    <select>
+                        <option value="SD">SD</option>
+                        <option value="SMP">SMP</option>
+                        <option value="SMA">SMA</option>
+                        <option value="S1">S1</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="jenis_kelamin">Jenis Kelamin</label>
+                    <input type="radio" id="jenis_kelamin" name="jenis_kelamin">Laki-Laki
+                    <input type="radio" id="jenis_kelamin" name="jenis_kelamin">Perempuan
+                </div>
+                <div>
+                    <label for="foto_siswa">Foto</label>
+                    <input type="file" id="foto_siswa" name="foto_siswa" />
+                </div>
+                <div>
+                    <label for="syarat_ketentuan">Syarat & Ketentuan</label>
+                    <input type="checkbox" id="syarat_ketentuan" name="syarat_ketentuan" />
+                </div>
+                <div>
+                    <button type="submit">Kirim</button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
