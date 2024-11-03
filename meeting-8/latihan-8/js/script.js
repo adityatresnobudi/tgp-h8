@@ -60,6 +60,5 @@ console.log(foo);
 // input: [80, 30, 20, 55, 32, 60, 10, 70, 90, 85]
 // output: 
 
-function twoSum(arr, search) {
-    
-}
+let wtf = []==![];
+console.log(wtf)
