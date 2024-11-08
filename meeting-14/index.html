@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let arr = [4, 5, 2, 1, 0, 3];
+
+      const selectionSort = (someArray) => {
+        let arrLength = someArray.length;
+        let minimumIndex = 0; // minimum value position
+        for (let idx = 0; idx < arrLength - 1; idx++) {
+          minimumIndex = idx;
+          for (let checker = idx + 1; checker < arrLength; checker++) {
+            if (someArray[minimumIndex] > someArray[checker]) {
+              minimumIndex = checker;
+            }
+          }
+          let temp = someArray[idx];
+          someArray[idx] = someArray[minimumIndex];
+          someArray[minimumIndex] = temp;
+          console.log(`Proses ke-${idx+1}: ${someArray}`);
+        }
+        return `Setelah diurutkan: ${someArray}`;
+      };
+
+      console.log(`Sebelum diurutkan: ${arr}`);
+      console.log(selectionSort(arr));
+    </script>
+  </body>
+</html>
